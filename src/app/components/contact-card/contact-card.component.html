@@ -1,0 +1,9 @@
+<div class="card shadow">
+  <div class="card-body">
+    <h5 class="card-title">{{ contact.fName }} {{ contact.lName }}</h5>
+    <p class="card-text">📞 {{ contact.phoneNumber }}</p>
+    <p class="card-text">📧 {{ contact.email }}</p>
+    <button class="btn btn-primary me-2" (click)="edit()">Edit</button>
+    <button class="btn btn-danger" (click)="remove()">Delete</button>
+  </div>
+</div>

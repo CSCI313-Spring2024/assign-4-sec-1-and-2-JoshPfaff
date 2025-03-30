@@ -1,0 +1,8 @@
+<div class="row mt-3">
+  <div class="col-md-4 mb-3" *ngFor="let contact of contacts()">
+    <app-contact-card
+      [contact]="contact"
+      (delete)="onDelete($event)"
+    ></app-contact-card>
+  </div>
+</div>
